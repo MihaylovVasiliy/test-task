@@ -12,7 +12,6 @@ const Header = () => {
             </p>
         </form>
         <button className="find-button"> Найти</button>
-        <button className="enter-button"> Найти</button>
     </header>
     )
 }

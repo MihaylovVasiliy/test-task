@@ -1,8 +1,10 @@
-import React from "react";
+import React from "react";  // eslint-disable-next-line
+import NewProductChannels from "./new-products-channels";
 
-const Channels = () => {
+const Channels = (props) => {
     return(
-       <p> Channels </p>
+        <div className="">
+        </div>
     )
 }
 
