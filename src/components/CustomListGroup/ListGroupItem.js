@@ -6,7 +6,6 @@ const ListGroupItem = ({
                            children,
                            className,
                            tag: Tag,
-                           message,
                            ...attrs
                        }) => {
     const classes = classNames(
@@ -25,14 +24,12 @@ ListGroupItem.propTypes = {
     children: PropTypes.node,
     className: PropTypes.string,
     tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-    message: PropTypes.string,
 };
 
 ListGroupItem.defaultProps = {
     children: null,
     className: '',
     tag: 'figure',
-    message: 'lorem',
 };
 
 export default ListGroupItem;

@@ -2,35 +2,13 @@ import React, {Fragment} from 'react';
 
 import ListGroupItem from './ListGroupItem';
 import ListGroup from "./ListGroup";
-import newChannelKitty from "../../assets/newProduct-kitty.png";
 
 const ListGroupLayout = (props) => (
     <Fragment>
-        <span role="img" aria-label="newProducts">🔥</span>
-        <h2>Новинки</h2>
-        <ListGroup>
-            <ListGroupItem>
+        <ListGroup {...props}>
+            <ListGroupItem {...props}>
                 <figure>
-                    <img src={newChannelKitty} alt="new product kitty"/>
-                    <figcaption> {props.message} </figcaption>
-                </figure>
-
-            </ListGroupItem>
-            <ListGroupItem>
-                <figure>
-                    <img src={newChannelKitty} alt="new product kitty"/>
-                    <figcaption> {props.message} </figcaption>
-                </figure>
-            </ListGroupItem>
-            <ListGroupItem>
-                <figure>
-                    <img src={newChannelKitty} alt="new product kitty"/>
-                    <figcaption> {props.message} </figcaption>
-                </figure>
-            </ListGroupItem>
-            <ListGroupItem>
-                <figure>
-                    <img src={newChannelKitty} alt="new product kitty"/>
+                    <img src={props.logo_image} alt={'props.logo_image'}/>
                     <figcaption> {props.message} </figcaption>
                 </figure>
             </ListGroupItem>
