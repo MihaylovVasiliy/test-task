@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, {Fragment} from 'react';
 
 import ListGroupItem from './ListGroupItem';
@@ -8,7 +9,7 @@ const ListGroupLayout = (props) => (
         <ListGroup {...props}>
             <ListGroupItem {...props}>
                 <figure>
-                    <img src={props.logo_image} alt={'props.logo_image'}/>
+                    <img src={props.logo_image}/>
                     <figcaption> {props.message} </figcaption>
                 </figure>
             </ListGroupItem>
@@ -16,3 +17,4 @@ const ListGroupLayout = (props) => (
     </Fragment>
 );
 export default ListGroupLayout;
+/* eslint-enable */
