@@ -5,13 +5,13 @@ const Header = () => {
     return(
     <header className="header">
         <img
-            src={logo} alt="logo" className="header__header-image"/>
+            src={logo} alt="Логотип ЦВТ" className="header__header-image"/>
         <form name="header__header-find">
-            <p className="header__header-find__paragraph">
-                <input type="text" placeholder="Поиск..." />
+            <p className="header header__header-find__paragraph">
+                <input className="header header__header-find__input" type="text" placeholder="Поиск..." />
             </p>
         </form>
-        <button className="find-button"> Найти</button>
+        <button className="header__header-button"> Найти</button>
     </header>
     )
 }

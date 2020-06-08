@@ -8,10 +8,10 @@ const ListGroupLayout = (props) => (
     <Fragment>
         <ListGroup {...props}>
             <ListGroupItem {...props}>
-                <img src={props.logo_image}/>
-                <div className="grid-table">
-                    <span> {props.heading} </span>
-                    <div className="schedule-grid-table">
+                <img className="ListGroupItem__image" src={props.logo_image}/>
+                <div className="ListGroupItem__grid-table">
+                    <span className="ListGroupItem__grid-table_span"> {props.heading} </span>
+                    <div className="ListGroupItem__grid-table_element">
                         <span> {props.schedule_item1} </span>
                         <span> {props.schedule_item2} </span>
                         <span> {props.schedule_item3} </span>
