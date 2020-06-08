@@ -1,16 +1,18 @@
 .tab-bar-nav {
+  margin: 0 auto;
+  justify-content: space-around;
+  width: 22%;
   position: relative;
   display: flex;
-  z-index: 2;
+
 }
 
 .tab-container {
-  padding: 20px;
+  margin: 0 auto;
+  width: 82%;
+  padding: 5px;
   min-height: 100px;
-  border: 1px solid #EDEDED;
-  border-radius: 0 0 5px 5px;
   position: relative;
-  top: -1px;
 }
 
 .vertical.tab-bar {

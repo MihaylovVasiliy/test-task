@@ -1,0 +1,193 @@
+/* eslint-disable */
+@import 'mixins.scss';
+
+$container_height: 1144px;
+$container_width: 1440px;
+$red_color: #E5261E;
+
+figure {
+  margin: 0 auto;
+}
+
+ul {
+  width: 100%;
+  margin: 10px ;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.main {
+  @include font($size: 20px, $height: 24px, $color: #333333);
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 80%;
+
+  &-wrapper {
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    top: 32px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  &__header-image {
+    display: block;
+    margin-right: 11px;
+  }
+
+  &__header-find {
+    width: 402px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__input {
+      width: 320px;
+      border: none;
+      border-bottom: 1px solid #333333;
+      outline: none;
+      @include font($weight: normal, $color: #333333);
+    }
+  }
+
+  &__header-button {
+    @include exitButton();
+  }
+
+  &__header-auth {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__input {
+      width: 130px;
+      outline: none;
+      border: none;
+      text-align: right;
+      padding-right: 16px;
+      box-sizing: border-box;
+      @include font($size: 16px, $height: 19px,$weight: 500, $color: #333333)
+    }
+
+    &__button {
+      @include enterButton();
+    }
+  }
+}
+
+.channels {
+  height: 696px;
+  display: flex;
+}
+
+.channels-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 0; //bugfix
+  overflow: hidden;
+
+  .channel {
+    flex: 1 0 auto; //IE bugfix
+    background: #F2F2F2;
+    border-radius: 8px;
+    margin: 0 8px 16px 0;
+    display: flex;
+    flex-direction: row;
+
+    &__logo {
+      width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__schedule {
+      width: 780px;
+      padding: 21px 0 7px 0;
+    }
+
+    .schedule-table {
+      border-collapse: collapse;
+
+      &__caption {
+        margin-bottom: 17px;
+        text-align: left;
+        @include font($size: 20px, $height: 24px, $color: #333333);
+      }
+
+      &__tr {
+        @include font($weight: normal, $size: 16px, $height: 19px, $color: #333333);
+      }
+
+      &__td {
+        padding: 0 16px 12px 0;
+      }
+
+      .is-online {
+        @include font($weight: normal, $size: 16px, $height: 19px);
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  position : fixed;
+  bottom : 0;
+  background: #F2F2F2;
+
+}
+
+.footer-container {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container__information {
+  font-style: normal;
+
+  &__address {
+    margin: 0 0 6px 0;
+    @include font($weight: normal, $size: 16px, $height: 19px, $color: #333333);
+  }
+
+  &__phones {
+    margin: 0 0 10px 0;
+    @include font($weight: normal, $size: 16px, $height: 19px, $color: #333333);
+  }
+
+  &__website {
+    text-decoration: none;
+    @include font($size: 16px, $height: 19px, $color: #1F4766);
+  }
+}
+
+/* eslint-enable */

@@ -7,14 +7,16 @@ import ListGroup from "./ListGroup";
 const ListGroupLayout = (props) => (
     <Fragment>
         <ListGroup {...props}>
-            <ListGroupItem {...props}>
-                <img className="ListGroupItem__image" src={props.logo_image}/>
-                <div className="ListGroupItem__grid-table">
-                    <span className="ListGroupItem__grid-table_span"> {props.heading} </span>
-                    <div className="ListGroupItem__grid-table_element">
-                        <span> {props.schedule_item1} </span>
-                        <span> {props.schedule_item2} </span>
-                        <span> {props.schedule_item3} </span>
+            <ListGroupItem {...props} className="list-group-item__channel-image">
+                <img className="list-group-item__image" src={props.logo_image}/>
+                <div className="list-group-item__grid-table">
+                    <span className="list-group-item__grid-table_span"> {props.heading} </span>
+                    <div className="list-group-item__grid-table_element">
+                        <ul className="list-group-item__grid-table_ul">
+                            <li className="list-group-item__grid-table_ul-li"><span> {props.schedule_item1} </span></li>
+                            <li className="list-group-item__grid-table_ul-li"><span> {props.schedule_item2} </span></li>
+                            <li className="list-group-item__grid-table_ul-li"><span> {props.schedule_item3} </span></li>
+                        </ul>
                     </div>
                 </div>
             </ListGroupItem>

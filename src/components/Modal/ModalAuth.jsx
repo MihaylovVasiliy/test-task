@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import Modal from './Modal';
 import Portal from "./Portal";
 
-class ModalAuth extends Component {
+class ModalAuth extends React.Component {
 
     state = {
         userName: '',
@@ -53,31 +53,35 @@ class ModalAuth extends Component {
     }
 
     handleChangeName = () => {
-        const inputNameChanger = document.getElementById('inputNameChange');
+        const inputNameChanger = document.getElementById('input-name-change');
         localStorage.setItem('user-name', inputNameChanger.value);
     }
 
     render() {
         return (
-            <Portal>
-                <button
-                    onClick={(this.state.isLoggedIn === true ? this.handleChangeLogOut : this.openModal)}>
-                    {(this.state.isLoggedIn === true ? 'Выйти' : 'Войти')}
-                </button>
-                <input id="inputNameChange" defaultValue={this.state.userName}
-                       onChange={this.handleChangeName}/>
-                <Modal
-                    title="Вход"
-                    isOpen={this.state.isOpen}
-                    isLoggedIn={this.state.isLoggedIn}
-                    onCancel={this.handleCancel}
-                    onSubmit={this.handleSubmit}
-                >
-                </Modal>
-
-            </Portal>
-        );
+                    <div className="header__header-auth">
+                        <input className="header__header-auth__input" id="input-name-change"
+                               defaultValue={this.state.userName}
+                               onChange={this.handleChangeName}/>
+                        <button className="header__header-auth__button"
+                                onClick={(this.state.isLoggedIn === true ? this.handleChangeLogOut : this.openModal)}>
+                            {(this.state.isLoggedIn === true ? 'Выйти' : 'Войти')}
+                        </button>
+                    <Portal style={{}}>
+                        <Modal
+                            title="Вход"
+                            isOpen={this.state.isOpen}
+                            isLoggedIn={this.state.isLoggedIn}
+                            onCancel={this.handleCancel}
+                            onSubmit={this.handleSubmit}
+                            className="portal__modal-window"
+                        >
+                        </Modal>
+                    </Portal>
+                </div>
+        )
     }
+
 }
 
 export default ModalAuth;

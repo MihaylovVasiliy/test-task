@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import TabBarNav from './TabBarNav';
 
-import './TabBar.css';
+import '../../styles/TabBar.scss';
 
 class TabBar extends Component {
   static propTypes = {

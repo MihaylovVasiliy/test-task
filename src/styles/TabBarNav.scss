@@ -1,0 +1,39 @@
+@import "mixins.scss";
+
+.nav-item {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #FFF;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  outline: none;
+  font-weight: 500;
+  text-transform: none;
+  font-family: Rubik;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: right;
+}
+
+.nav-item.active {
+  border-bottom: 2px solid #E5261E;
+  color: #E5261E;
+
+}
+
+.vertical .nav-item {
+  border-radius: 5px 0 0 5px;
+}
+
+.nav-item {
+
+}
+.nav-item.active {
+  border-bottom: 2px solid #E5261E;
+  color: #E5261E;
+  background-color: #FFFFFF;
+}

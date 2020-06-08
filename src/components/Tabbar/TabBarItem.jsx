@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import './TabBarItem.css';
+import '../../styles/TabBarItem.scss';
 
 const TabBarItem = ({
   children, label, activeTab, ...attrs

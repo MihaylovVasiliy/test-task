@@ -8,10 +8,13 @@ const ListGroupLayout = (props) => (
     <Fragment>
         <ListGroup {...props}>
             <ListGroupItem {...props}>
-                <figure className="ListGroupLayout__figure">
-                    <img className="ListGroupLayout__figure_image" src={props.logo_image}/>
-                    <figcaption className="ListGroupLayout__figure_message"> {props.message} </figcaption>
+                <div className="list-group-layout__figure_wrapper">
+                <figure className="list-group-layout__figure">
+                    <img className="list-group-layout__figure_image" src={props.logo_image}/>
+                    <figcaption className="list-group-layout__figure_message"> {props.message} </figcaption>
+                    <figcaption className="list-group-layout__figure_message_genres"> {props.message_genres} </figcaption>
                 </figure>
+                </div>
             </ListGroupItem>
         </ListGroup>
     </Fragment>

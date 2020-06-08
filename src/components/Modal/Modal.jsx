@@ -17,15 +17,15 @@ const Modal = ({
                             <div className="modalTitle">{title}</div>
                         </div>
                         <div className="modalBody">
-                            <input className="Modal-Login" id="input-login" type="text" placeholder="Логин"/>
-                            <input className="Modal-Password" id="input-password" type="text" placeholder="Пароль"/>
+                            <input className="modal-Login" id="input-login" type="text" placeholder="Логин"/>
+                            <input className="modal-Password" id="input-password" type="text" placeholder="Пароль"/>
                             <input id="checkbox-remember" type="checkbox"/>
                             <label htmlFor="checkboxlabel">Запомнить</label>
                             {children}
                         </div>
                         <div className="modalFooter">
-                            <button onClick={onCancel}>Cancel</button>
-                            <button onClick={onSubmit}>Submit</button>
+                            <button onClick={onSubmit}>Войти</button>
+                            <button onClick={onCancel}>Х</button>
                         </div>
                     </div>
                 </div>

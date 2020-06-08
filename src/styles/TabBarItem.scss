@@ -1,0 +1,140 @@
+@import 'mixins.scss';
+
+.tab-bar-item {
+  height: 0;
+  overflow: hidden;
+  margin: 10px;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+
+  &.active {
+    height: auto;
+  }
+
+  &__span {
+    display: block;
+  }
+
+  &__new-products {
+    height: 420px;
+  }
+
+  &__new {
+    display: inline-flex;
+    margin: 15px 0;
+  }
+
+  &__genres {
+    display: flex;
+    justify-content: space-between;
+    height: 228px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 57px;
+    text-align: center;
+
+
+    &_comedy {
+      justify-content: center;
+      background: linear-gradient(136.27deg, #F2C94C 8.44%, #F29A4A 91.36%);
+      border-radius: 6px;
+      opacity: .8
+    }
+
+    &_comedy:hover {
+      opacity: 1;
+    }
+
+   &_drama {
+      background: linear-gradient(136.27deg, #F2994A 8.44%, #EB5757 91.36%);
+      opacity: .8;
+      border-radius: 6px;
+    }
+
+    &_drama:hover {
+      opacity: 1;
+    }
+
+    &_fantastic {
+      background: linear-gradient(136.27deg, #56CCF2 8.44%, #2F80ED 91.36%);
+      opacity: .8;
+      border-radius: 6px;
+    }
+
+    &_fantastic:hover {
+      opacity: 1;
+    }
+
+    &_scary {
+      background: linear-gradient(136.27deg, #828282 8.44%, #333333 91.36%);
+      opacity: .8;
+      border-radius: 6px;
+    }
+
+    &_scary:hover {
+      opacity: 1;
+    }
+  }
+  &__channels {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+}
+
+.list-group-layout__figure {
+  width: 280px;
+  height: 100%;
+}
+
+.list-group-layout__figure_wrapper {
+}
+
+.list-group-layout__figure_message_genres {
+  margin: 80px 0 auto;
+  font-size: 20px;
+  line-height: 46px;
+  text-align: center;
+  color: #FFFFFF
+}
+
+.list-group-item__image {
+  margin: 0 auto;
+}
+
+.list-group-item__channel-image {
+  background: #F2F2F2;
+  border-radius: 8px;
+  height: 162px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-group-item__grid-table {
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.list-group-item__grid-table_ul {
+  list-style-type: none;
+}
+
+.list-group-item__grid-table_ul-li {
+  padding: 6px 0;
+  @include font($size: 16px, $height: 19px, $color: #333333);
+}
+
+.list-group-item__grid-table_span {
+  padding-left: 10px;
+  @include font($size: 20px, $height: 24px, $weight: 500, $color: #333333);
+}
+
+
+
