@@ -5,29 +5,29 @@ import classNames from 'classnames';
 import '../../styles/TabBarItem.scss';
 
 const TabBarItem = ({
-  children, label, activeTab, ...attrs
-}) => {
-  const classes = classNames(
-    'tab-bar-item',
-    { active: activeTab === label },
-  );
+                        children, label, activeTab, ...attrs
+                    }) => {
+    const classes = classNames(
+        'tab-bar-item',
+        {active: activeTab === label},
+    );
 
-  return (
-    <div className={classes} {...attrs}>
-      {children}
-    </div>
-  );
+    return (
+        <div className={classes} {...attrs}>
+            {children}
+        </div>
+    );
 };
 
 TabBarItem.propTypes = {
-  label: PropTypes.string.isRequired,
-  children: PropTypes.node,
-  activeTab: PropTypes.string,
+    label: PropTypes.string.isRequired,
+    children: PropTypes.node,
+    activeTab: PropTypes.string,
 };
 
 TabBarItem.defaultProps = {
-  children: null,
-  activeTab: '',
+    children: null,
+    activeTab: '',
 };
 
 export default TabBarItem;

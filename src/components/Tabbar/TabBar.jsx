@@ -73,9 +73,7 @@ class TabBar extends Component {
 
         return (
             <div className={classes} {...attrs}>
-
                 <Scrollbar style={{position: ''}}>
-
                     <div className="tab-container">
                         <div className="tab-bar-nav">
                             {this.renderTabs()}

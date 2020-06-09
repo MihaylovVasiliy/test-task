@@ -59,26 +59,27 @@ class ModalAuth extends React.Component {
 
     render() {
         return (
-                    <div className="header__header-auth">
-                        <input className="header__header-auth__input" id="input-name-change"
-                               defaultValue={this.state.userName}
-                               onChange={this.handleChangeName}/>
-                        <button className={(this.state.isLoggedIn === true) ? "header__header-auth__button-exit" : "header__header-auth__button-enter"}
-                                onClick={(this.state.isLoggedIn === true ? this.handleChangeLogOut : this.openModal)}>
-                            {(this.state.isLoggedIn === true ? 'Выйти' : 'Войти')}
-                        </button>
-                    <Portal style={{}}>
-                        <Modal
-                            title="Вход"
-                            isOpen={this.state.isOpen}
-                            isLoggedIn={this.state.isLoggedIn}
-                            onCancel={this.handleCancel}
-                            onSubmit={this.handleSubmit}
-                            className="portal__modal-window"
-                        >
-                        </Modal>
-                    </Portal>
-                </div>
+            <div className="header__header-auth">
+                <input className="header__header-auth__input" id="input-name-change"
+                       defaultValue={this.state.userName}
+                       onChange={this.handleChangeName}/>
+                <button
+                    className={(this.state.isLoggedIn === true) ? "header__header-auth__button-exit" : "header__header-auth__button-enter"}
+                    onClick={(this.state.isLoggedIn === true ? this.handleChangeLogOut : this.openModal)}>
+                    {(this.state.isLoggedIn === true ? 'Выйти' : 'Войти')}
+                </button>
+                <Portal style={{}}>
+                    <Modal
+                        title="Вход"
+                        isOpen={this.state.isOpen}
+                        isLoggedIn={this.state.isLoggedIn}
+                        onCancel={this.handleCancel}
+                        onSubmit={this.handleSubmit}
+                        className="portal__modal-window"
+                    >
+                    </Modal>
+                </Portal>
+            </div>
         )
     }
 

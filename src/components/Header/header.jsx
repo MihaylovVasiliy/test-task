@@ -16,7 +16,6 @@ class Header extends React.Component {
                     </p>
                     <button className="header__header-button"> Найти</button>
                 </form>
-
             </header>
         )
     }

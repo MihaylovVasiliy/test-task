@@ -131,6 +131,7 @@ a {
   position : fixed;
   bottom : 0;
   background: #F2F2F2;
+  @include font($size: 16px, $height: 19px, $color: black);
 }
 
 .footer-container {
@@ -143,6 +144,7 @@ a {
 
 .footer-container__information {
   font-style: normal;
+  margin: 15px;
 
   &__address {
     margin: 0 0 6px 0;
