@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/task/static/css/main.62fec8d9.chunk.css",
+    "main.js": "/task/static/js/main.5721dfce.chunk.js",
+    "main.js.map": "/task/static/js/main.5721dfce.chunk.js.map",
+    "runtime-main.js": "/task/static/js/runtime-main.b0c76932.js",
+    "runtime-main.js.map": "/task/static/js/runtime-main.b0c76932.js.map",
+    "static/js/2.31ea276b.chunk.js": "/task/static/js/2.31ea276b.chunk.js",
+    "static/js/2.31ea276b.chunk.js.map": "/task/static/js/2.31ea276b.chunk.js.map",
+    "index.html": "/task/index.html",
+    "precache-manifest.09bbab76b0971e0e5f1e7a99820321ae.js": "/task/precache-manifest.09bbab76b0971e0e5f1e7a99820321ae.js",
+    "service-worker.js": "/task/service-worker.js",
+    "static/css/main.62fec8d9.chunk.css.map": "/task/static/css/main.62fec8d9.chunk.css.map",
+    "static/js/2.31ea276b.chunk.js.LICENSE.txt": "/task/static/js/2.31ea276b.chunk.js.LICENSE.txt",
+    "static/media/1-channel.svg": "/task/static/media/1-channel.1ca60a7b.svg",
+    "static/media/2x2-channel.svg": "/task/static/media/2x2-channel.b66c7e3e.svg",
+    "static/media/style.scss": "/task/static/media/Rubik-Regular.b3d0902b.ttf",
+    "static/media/amedia-premium-channel.svg": "/task/static/media/amedia-premium-channel.4333f466.svg",
+    "static/media/htc-cs-logo.svg": "/task/static/media/htc-cs-logo.efc916ff.svg",
+    "static/media/logo.svg": "/task/static/media/logo.2e3245d4.svg",
+    "static/media/newProduct-batman.png": "/task/static/media/newProduct-batman.7cedf799.png",
+    "static/media/newProduct-hollywood.png": "/task/static/media/newProduct-hollywood.e380a79e.png",
+    "static/media/newProduct-kitty.png": "/task/static/media/newProduct-kitty.5e574b3f.png",
+    "static/media/newProduct-strip.png": "/task/static/media/newProduct-strip.4692ec10.png",
+    "static/media/rbk-channel.svg": "/task/static/media/rbk-channel.5c4d8347.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b0c76932.js",
+    "static/js/2.31ea276b.chunk.js",
+    "static/css/main.62fec8d9.chunk.css",
+    "static/js/main.5721dfce.chunk.js"
+  ]
+}
