@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, {Component} from 'react';
+import React from 'react';
 import Modal from './Modal';
 import Portal from "./Portal";
 
@@ -63,7 +63,7 @@ class ModalAuth extends React.Component {
                         <input className="header__header-auth__input" id="input-name-change"
                                defaultValue={this.state.userName}
                                onChange={this.handleChangeName}/>
-                        <button className="header__header-auth__button"
+                        <button className={(this.state.isLoggedIn === true) ? "header__header-auth__button-exit" : "header__header-auth__button-enter"}
                                 onClick={(this.state.isLoggedIn === true ? this.handleChangeLogOut : this.openModal)}>
                             {(this.state.isLoggedIn === true ? 'Выйти' : 'Войти')}
                         </button>

@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './Modal.css';
+import '../../styles/Modal.scss';
 
 const Modal = ({
-                   title, isOpen, onCancel, onSubmit, children,
+                   title, isOpen, onSubmit, children,
                }) => {
 
     return (
@@ -19,13 +19,14 @@ const Modal = ({
                         <div className="modalBody">
                             <input className="modal-Login" id="input-login" type="text" placeholder="Логин"/>
                             <input className="modal-Password" id="input-password" type="text" placeholder="Пароль"/>
-                            <input id="checkbox-remember" type="checkbox"/>
-                            <label htmlFor="checkboxlabel">Запомнить</label>
+                            <div className="modalBodyCheckbox">
+                            <input className="modal-checkbox-input" id="checkbox-remember" type="checkbox"/>
+                            <label className="modal-checkbox-label" htmlFor="checkboxlabel">Запомнить</label>
+                            </div>
                             {children}
                         </div>
                         <div className="modalFooter">
-                            <button onClick={onSubmit}>Войти</button>
-                            <button onClick={onCancel}>Х</button>
+                            <button className="modal-enter-button" onClick={onSubmit}>Войти</button>
                         </div>
                     </div>
                 </div>

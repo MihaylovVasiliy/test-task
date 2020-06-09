@@ -8,7 +8,6 @@ import TabBarItem from "./components/Tabbar/TabBarItem";
 
 import TabBar from "./components/Tabbar/TabBar";
 import ModalAuth from "./components/Modal/ModalAuth";
-import Scrollbar from "react-scrollbars-custom";
 
 import kittyImage from "./assets/newProduct-kitty.png";
 import batmanImage from "./assets/newProduct-batman.png";
@@ -22,98 +21,89 @@ import channelAmedia from "./assets/amedia-premium-channel.svg";
 
 import './styles/style.scss'
 
-function App(props) {
+function App() {
     return (
-
-        <Scrollbar style={{position: 'inherit'}}>
-
         <div className="wrapper" id="wrapper">
-
             <div className="header-wrapper">
-            <Header/>
+                <Header/>
                 <ModalAuth/>
             </div>
 
-
-                <main className="main">
-
-                    <TabBar>
-                        <TabBarItem label='Фильмы'>
+            <main className="main">
+                <TabBar>
+                    <TabBarItem label='Фильмы'>
                             <span className="tab-bar-item__span" role="img"
                                   aria-label="newProducts">🔥Новинки</span>
-                            <div className="tab-bar-item__new">
-                                <ListGroupLayout className="tab-bar-item__new-products"
-                                                 message="Мульт в кино. Выпуск №103. Некогда грустить"
-                                                 hover_message="Lorem ipsum dolor sit" logo_image={kittyImage}/>
-                                <ListGroupLayout className="tab-bar-item__new-products" message="Новый Бэтмен"
-                                                 hover_message="Lorem ipsum dolor sit" logo_image={batmanImage}/>
-                                <ListGroupLayout className="tab-bar-item__new-products" message="Однажды... в Голливуде"
-                                                 hover_message="Фильм повествует о череде
+                        <div className="tab-bar-item__new">
+                            <ListGroupLayout className="tab-bar-item__new-products"
+                                             message="Мульт в кино. Выпуск №103. Некогда грустить"
+                                             hover_message="Lorem ipsum dolor sit" logo_image={kittyImage}/>
+                            <ListGroupLayout className="tab-bar-item__new-products" message="Новый Бэтмен"
+                                             hover_message="Lorem ipsum dolor sit" logo_image={batmanImage}/>
+                            <ListGroupLayout className="tab-bar-item__new-products"
+                                             message="Однажды... в Голливуде"
+                                             hover_message="Фильм повествует о череде
                                      событий, произошедших в Голливуде в 1969 году, на закате его «золотого
                             века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в
                             стремительно меняющемся мире киноиндустрии."
-                                                 logo_image={hollywoodImage}/>
-                                <ListGroupLayout className="tab-bar-item__new-products" message="Стриптизёрши"
-                                                 hover_message="Lorem ipsum dolor sit" logo_image={stripImage}/>
-                            </div>
-                            <span className="tab-bar-item__span">Жанры</span>
-                            <div className="tab-bar-item__genres">
+                                             logo_image={hollywoodImage}/>
+                            <ListGroupLayout className="tab-bar-item__new-products" message="Стриптизёрши"
+                                             hover_message="Lorem ipsum dolor sit" logo_image={stripImage}/>
+                        </div>
+                        <span className="tab-bar-item__span">Жанры</span>
+                        <div className="tab-bar-item__genres">
 
-                                <ListGroupLayout className="tab-bar-item__genres_comedy"
-                                                 message_genres={<span role="img"
-                                                                       aria-label="tab-bar-item__genres_emoji">😁 <br/> Комедии </span>}/>
-                                <ListGroupLayout className="tab-bar-item__genres_drama"
-                                                 message_genres={<span role="img"
-                                                                       aria-label="tab-bar-item__genres_emoji">😭 <br/> Драмы </span>}/>
-                                <ListGroupLayout className="tab-bar-item__genres_fantastic"
-                                                 message_genres={<span role="img"
-                                                                       aria-label="tab-bar-item__genres_emoji">👽 <br/> Фантастика </span>}/>
-                                <ListGroupLayout className="tab-bar-item__genres_scary"
-                                                 message_genres={<span role="img"
-                                                                       aria-label="tab-bar-item__genres_emoji">👻 <br/> Ужасы </span>}/>
-                            </div>
-                        </TabBarItem>
+                            <ListGroupLayout className="tab-bar-item__genres_comedy"
+                                             message_genres={<span role="img"
+                                                                   aria-label="tab-bar-item__genres_emoji">😁 <br/> Комедии </span>}/>
+                            <ListGroupLayout className="tab-bar-item__genres_drama"
+                                             message_genres={<span role="img"
+                                                                   aria-label="tab-bar-item__genres_emoji">😭 <br/> Драмы </span>}/>
+                            <ListGroupLayout className="tab-bar-item__genres_fantastic"
+                                             message_genres={<span role="img"
+                                                                   aria-label="tab-bar-item__genres_emoji">👽 <br/> Фантастика </span>}/>
+                            <ListGroupLayout className="tab-bar-item__genres_scary"
+                                             message_genres={<span role="img"
+                                                                   aria-label="tab-bar-item__genres_emoji">👻 <br/> Ужасы </span>}/>
+                        </div>
+                    </TabBarItem>
 
-                        <TabBarItem label='Телеканалы'>
+                    <TabBarItem label='Телеканалы'>
 
-                            <ListGroupLayoutGrid className="tab-bar-item__channels" heading="Первый канал"
-                                                 schedule_item1="13:00 Новости(с субтитрами)"
-                                                 schedule_item2="14:00 Давай поженимся"
-                                                 schedule_item3="15:00 Другие новости"
-                                                 logo_image={channel1}/>
-                            <ListGroupLayoutGrid className="tab-bar-item__channels" heading="2x2"
-                                                 schedule_item1="13:00 МУЛЬТ ТВ. Сезон 4, 7 серия"
-                                                 schedule_item2="14:00 ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия"
-                                                 schedule_item3="15:00 БУРДАШЕВ. Сезон 1, 20 серия"
-                                                 logo_image={channel2x2}/>
-                            <ListGroupLayoutGrid className="tab-bar-item__channels" heading="РБК"
-                                                 schedule_item1="13:00 ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС"
-                                                 schedule_item2="14:00 ДЕНЬ. Главные темы"
-                                                 schedule_item3="15:00 Главные новости" logo_image={channelRbk}/>
-                            <ListGroupLayoutGrid className="tab-bar-item__channels" heading="AMEDIA PREMIUM"
-                                                 schedule_item1="13:00 Клиент всегда мёртв"
-                                                 schedule_item2="14:00 Голодные игры: Сойка-пересмешница. Часть I"
-                                                 schedule_item3="15:00 Секс в большом городе"
-                                                 logo_image={channelAmedia}/>
-                            <ListGroupLayoutGrid className="tab-bar-item__channels" heading="Канал"
-                                                 schedule_item1="13:00 Новости(с субтитрами)"
-                                                 schedule_item2="14:00 Давай поженимся"
-                                                 schedule_item3="15:00 Другие новости"
-                                                 logo_image={channelRbk}/>
-                            <ListGroupLayoutGrid className="tab-bar-item__channels" heading="Канал"
-                                                 schedule_item1="13:00 Новости(с субтитрами)"
-                                                 schedule_item2="14:00 Давай поженимся"
-                                                 schedule_item3="15:00 Другие новости"
-                                                 logo_image={channelRbk}/>
-                        </TabBarItem>
-                    </TabBar>
-
-                </main>
-
+                        <ListGroupLayoutGrid className="tab-bar-item__channels" heading="Первый канал"
+                                             schedule_item1="13:00 Новости(с субтитрами)"
+                                             schedule_item2="14:00 Давай поженимся"
+                                             schedule_item3="15:00 Другие новости"
+                                             logo_image={channel1}/>
+                        <ListGroupLayoutGrid className="tab-bar-item__channels" heading="2x2"
+                                             schedule_item1="13:00 МУЛЬТ ТВ. Сезон 4, 7 серия"
+                                             schedule_item2="14:00 ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия"
+                                             schedule_item3="15:00 БУРДАШЕВ. Сезон 1, 20 серия"
+                                             logo_image={channel2x2}/>
+                        <ListGroupLayoutGrid className="tab-bar-item__channels" heading="РБК"
+                                             schedule_item1="13:00 ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС"
+                                             schedule_item2="14:00 ДЕНЬ. Главные темы"
+                                             schedule_item3="15:00 Главные новости" logo_image={channelRbk}/>
+                        <ListGroupLayoutGrid className="tab-bar-item__channels" heading="AMEDIA PREMIUM"
+                                             schedule_item1="13:00 Клиент всегда мёртв"
+                                             schedule_item2="14:00 Голодные игры: Сойка-пересмешница. Часть I"
+                                             schedule_item3="15:00 Секс в большом городе"
+                                             logo_image={channelAmedia}/>
+                        <ListGroupLayoutGrid className="tab-bar-item__channels" heading="Канал"
+                                             schedule_item1="13:00 Новости(с субтитрами)"
+                                             schedule_item2="14:00 Давай поженимся"
+                                             schedule_item3="15:00 Другие новости"
+                                             logo_image={channelRbk}/>
+                        <ListGroupLayoutGrid className="tab-bar-item__channels" heading="Канал"
+                                             schedule_item1="13:00 Новости(с субтитрами)"
+                                             schedule_item2="14:00 Давай поженимся"
+                                             schedule_item3="15:00 Другие новости"
+                                             logo_image={channelRbk}/>
+                    </TabBarItem>
+                </TabBar>
+            </main>
             <Footer/>
-
         </div>
-        </Scrollbar>
     );
 }
 

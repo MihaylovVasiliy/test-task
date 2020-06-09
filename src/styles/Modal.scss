@@ -1,0 +1,100 @@
+@import "mixins.scss";
+
+.modalOverlay {
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modalWindow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFF;
+  min-height: 200px;
+  width: 232px;
+  height: 322px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 36px;
+  border-radius: 8px;
+}
+
+.modalHeader,
+.modalFooter {
+  padding: 10px 20px;
+  justify-content: center;
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.modalHeader {
+  min-height: 60px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.modalTitle {
+  font-family: Rubik,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  width: 70px;
+}
+
+.modalFooter {
+  display: flex;
+  align-items: center;
+}
+
+.modalFooter button:last-child {
+  margin-left: 10px;
+}
+
+.modal-Login {
+  border: none;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 6px;
+  margin-bottom: 30px;
+  outline: none;
+  font-family: Rubik,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.modal-Password {
+  border: none;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 6px;
+  margin-bottom: 30px;
+  outline: none;
+  font-family: Rubik,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.modalBodyCheckbox {
+  margin-bottom: 35px;
+}
+
+.modal-enter-button{
+  @include enterButton();
+}
