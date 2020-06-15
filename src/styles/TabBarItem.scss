@@ -3,7 +3,7 @@
 .tab-bar-item {
   height: 0;
   overflow: hidden;
-  margin: 25px 0;
+  margin: 0 auto;
   border-bottom: 1px solid transparent;
   cursor: pointer;
 
@@ -13,10 +13,7 @@
 
   &__span {
     display: block;
-    font-family: Rubik, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
+    @include font($color: #333333, $size: 24px, $height: 28px, $weight: 600);
     line-height: 28px;
   }
 
@@ -40,6 +37,10 @@
     font-size: 48px;
     line-height: 57px;
     text-align: center;
+
+  &_emoji_message {
+    @include font($weight: normal, $size: 20px, $height: 24px, $color: #FFFFFF);
+  }
 
 
     &_comedy {
@@ -99,10 +100,7 @@
 
 .list-group-layout__figure_message_genres {
   margin: 0 auto;
-  font-size: 32px;
-  line-height: 46px;
-  text-align: center;
-  color: #FFFFFF
+  @include font($weight: normal, $size: 32px, $height: 46px, $color: #FFFFFF);
 }
 
 .list-group-item__image {
@@ -137,7 +135,7 @@
 
 .list-group-item__grid-table_span {
   padding-left: 10px;
-  @include font($size: 20px, $height: 24px, $weight: 500, $color: #333333);
+  @include font($size: 20px, $height: 24px, $weight: 600, $color: #333333);
 }
 
 

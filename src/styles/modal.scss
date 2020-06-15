@@ -48,11 +48,7 @@
 }
 
 .modalTitle {
-  font-family: Rubik,sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 33px;
+  @include font($size: 28px, $height: 33px, $weight: 500);
   width: 70px;
 }
 
@@ -71,11 +67,7 @@
   padding-bottom: 6px;
   margin-bottom: 30px;
   outline: none;
-  font-family: Rubik,sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
+  @include font($size: 16px, $height: 19px, $weight: normal);
 }
 
 .modal-Password {
@@ -84,11 +76,7 @@
   padding-bottom: 6px;
   margin-bottom: 30px;
   outline: none;
-  font-family: Rubik,sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
+  @include font($size: 16px, $height: 19px, $weight: normal);
 }
 
 .modalBodyCheckbox {

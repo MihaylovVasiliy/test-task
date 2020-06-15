@@ -54,16 +54,20 @@ function App() {
                         <div className="tab-bar-item__genres">
 
                             <ListGroupLayout className="tab-bar-item__genres_comedy"
-                                             message_genres={<span role="img"
+                                             message_genres={<span className="tab-bar-item__genres_emoji_message"
+                                                                   role="img"
                                                                    aria-label="tab-bar-item__genres_emoji">😁 <br/> Комедии </span>}/>
                             <ListGroupLayout className="tab-bar-item__genres_drama"
                                              message_genres={<span role="img"
+                                                                   className="tab-bar-item__genres_emoji_message"
                                                                    aria-label="tab-bar-item__genres_emoji">😭 <br/> Драмы </span>}/>
                             <ListGroupLayout className="tab-bar-item__genres_fantastic"
                                              message_genres={<span role="img"
+                                                                   className="tab-bar-item__genres_emoji_message"
                                                                    aria-label="tab-bar-item__genres_emoji">👽 <br/> Фантастика </span>}/>
                             <ListGroupLayout className="tab-bar-item__genres_scary"
                                              message_genres={<span role="img"
+                                                                   className="tab-bar-item__genres_emoji_message"
                                                                    aria-label="tab-bar-item__genres_emoji">👻 <br/> Ужасы </span>}/>
                         </div>
                     </TabBarItem>

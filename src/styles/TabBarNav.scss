@@ -10,28 +10,20 @@
   cursor: pointer;
   border-radius: 5px 5px 0 0;
   outline: none;
-  font-weight: 500;
   text-transform: none;
-  font-family: Rubik;
-  font-style: normal;
-  font-size: 28px;
-  line-height: 33px;
   text-align: right;
+  @include font($color: #333333, $size: 28px, $height: 33px, $weight: 600);
 }
 
 .nav-item.active {
   border-bottom: 2px solid #E5261E;
   color: #E5261E;
-
 }
 
 .vertical .nav-item {
   border-radius: 5px 0 0 5px;
 }
 
-.nav-item {
-
-}
 .nav-item.active {
   border-bottom: 2px solid #E5261E;
   color: #E5261E;

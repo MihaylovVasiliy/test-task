@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import TabBarNav from './TabBarNav';
-import Scrollbar from "react-scrollbars-custom";
 
 import '../../styles/TabBar.scss';
 
@@ -73,14 +72,12 @@ class TabBar extends Component {
 
         return (
             <div className={classes} {...attrs}>
-                <Scrollbar style={{position: ''}}>
+                <div className="tab-bar-nav">
+                    {this.renderTabs()}
+                </div>
                     <div className="tab-container">
-                        <div className="tab-bar-nav">
-                            {this.renderTabs()}
-                        </div>
                         {React.Children.map(children, child => React.cloneElement(child, {activeTab}))}
                     </div>
-                </Scrollbar>
             </div>
         );
     }
