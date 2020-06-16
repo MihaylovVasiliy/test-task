@@ -4,7 +4,7 @@ import React, {Fragment} from 'react';
 import ListGroupItem from './ListGroupItem';
 import ListGroup from "./ListGroup";
 
-const ListGroupLayout = (props) => (
+const ListGroupLayoutGrid = (props) => (
     <Fragment>
         <ListGroup {...props}>
             <ListGroupItem {...props} className="list-group-item__channel-image">
@@ -23,5 +23,5 @@ const ListGroupLayout = (props) => (
         </ListGroup>
     </Fragment>
 );
-export default ListGroupLayout;
+export default ListGroupLayoutGrid;
 /* eslint-enable */

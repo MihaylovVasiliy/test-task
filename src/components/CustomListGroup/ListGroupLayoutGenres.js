@@ -4,7 +4,7 @@ import React, {Fragment} from 'react';
 import ListGroupItem from './ListGroupItem';
 import ListGroup from "./ListGroup";
 
-const ListGroupLayout = (props) => (
+const ListGroupLayoutGenres = (props) => (
     <Fragment>
         <ListGroup {...props}>
             <ListGroupItem {...props}>
@@ -19,5 +19,5 @@ const ListGroupLayout = (props) => (
         </ListGroup>
     </Fragment>
 );
-export default ListGroupLayout;
+export default ListGroupLayoutGenres;
 /* eslint-enable */
