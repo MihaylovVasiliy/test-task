@@ -1,6 +1,9 @@
 @import 'mixins.scss';
 
 .tab-bar-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   height: 0;
   overflow: hidden;
   margin-left: 13px;
@@ -12,8 +15,8 @@
   }
 
   &__span {
-    display: block;
     @include font($color: #333333, $size: 24px, $height: 28px, $weight: 600);
+    display: block;
     line-height: 28px;
   }
 
@@ -27,9 +30,8 @@
   }
 
   &__genres {
-    width: 280px;
-    display: flex;
-    margin: 15px 0;
+    display: inline-flex;
+    margin: 15px auto;
     height: 228px;
     text-align: center;
     @include font($weight: normal, $size: 48px, $height: 57px);

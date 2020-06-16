@@ -34,7 +34,7 @@ function App() {
                 <TabBar>
                     <TabBarItem label='Фильмы'>
                             <span className="tab-bar-item__span" role="img"
-                                  aria-label="newProducts">🔥Новинки</span>
+                                  aria-label="newProducts">🔥  Новинки</span>
                         <div className="tab-bar-item__new">
                             <ListGroupLayoutHover className="tab-bar-item__new-products"
                                                    message="Мульт в кино. Выпуск №103. Некогда грустить"
